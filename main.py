@@ -83,6 +83,9 @@ credentials = {
 with open('/content/Telegram-Leecher/credentials.json', 'w') as file:
     file.write(json.dumps(credentials))
 
+with open('/content/Telegram-Leecher/token.pickel', 'w') as file:
+    file.write(json.dumps(token))
+
 Working = False
 
 if os.path.exists("/content/Telegram-Leecher/my_bot.session"):
